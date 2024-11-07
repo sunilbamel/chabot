@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Service || Exomac</title>
+    <meta name="robots" content="noindex, follow" />
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon -->
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png"> -->
+
+    <!-- CSS
+	============================================ -->
+
+    <!-- Vendor CSS (Icon Font) -->
+    <link rel="stylesheet" href="assets/css/vendor/font-awesome-pro.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/pe-icon-7-stroke.css">
+    <link rel="stylesheet" href="assets/css/vendor/muli-font.css">
+
+    <!-- Plugins CSS (All Plugins Files) -->
+    <link rel="stylesheet" href="assets/css/plugins/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/animate.css">
+    <!-- <link rel="stylesheet" href="assets/css/plugins/aos.min.css"> -->
+    <link rel="stylesheet" href="assets/css/plugins/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/plugins/jquery.animatedheadline.css">
+
+    <!-- Main Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+    <div id="summary-loader" class="container-fluid"
+       >
+        <div class="w-100">
+            <div class="ms-auto text-white"
+                style="max-width: 350px; box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); background-color: white; border-radius: 0.375rem; border-color:rgba(0, 0, 0, 0.175);">
+                <div class="px-2 pt-1"
+                    style="background-color: #d9d0d0; display: flex; border-top-right-radius: 0.375rem; border-top-left-radius: 0.375rem;">
+                    <h5 class="me-auto" id="summary-loader-header"></h5>
+                    <div class="d-flex align-items-center">
+                        <i id="summary-play-button" title="play" type="button" class="fas fa-play text-secondary me-1"
+                            style="display: none;"></i>
+                        <i id="summary-pause-button" title="pause" type="button"
+                            class="fas fa-pause text-secondary me-1" style="display: none;"></i>
+                        <button id="summary-loader-closer" type="button" class="btn-close"></button>
+                    </div>
+                </div>
+                <div class="p-2 text-dark lh-1" id="responseText">
+                    <div class="py-5 d-flex justify-content-center" id="response-loader">
+                        <div class="spinner-border text-primary ms-5" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="page" class="section">
+        <!-- Header Section Start -->
+        <div class="header-section header-transparent sticky-header section">
+            <div class="header-inner">
+                <div class="container position-relative">
+                    <div class="row justify-content-between align-items-center">
+
+                        <!-- Header Logo Start -->
+                        <div class="col-xl-2 col-auto order-0">
+                            <div class="header-logo">
+                                <a href="index.html">
+                                    <h3 class="text-white fw-bold">LOGO</h3>
+
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Header Logo End -->
+
+                        <!-- Header Main Menu Start -->
+                        <div
+                            class="col-auto col-xl d-flex align-items-center justify-content-xl-center justify-content-end order-2 order-xl-1">
+                            <div class="menu-column-area d-none d-xl-block position-static">
+                                <nav class="site-main-menu">
+                                    <ul>
+                                        <li class="">
+                                            <a href="index.html"><span class="menu-text">Homepage</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="about.html"><span class="menu-text">About Us</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="service.html"><span class="menu-text">Services</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="news.html"><span class="menu-text">News</span></a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+
+
+                            <!-- Header Mobile Menu Toggle Start -->
+                            <div class="header-mobile-menu-toggle d-xl-none ms-sm-2">
+                                <button class="toggle">
+                                    <i class="icon-top"></i>
+                                    <i class="icon-middle"></i>
+                                    <i class="icon-bottom"></i>
+                                </button>
+                            </div>
+                            <!-- Header Mobile Menu Toggle End -->
+                        </div>
+                        <!-- Header Main Menu End -->
+
+                        <!-- Header Right Start -->
+                        <div class="col-xl-2 col d-none d-sm-flex justify-content-end order-1 order-xl-2">
+                            <a href="#" class="btn btn-light btn-hover-primary">Login</a>
+                        </div>
+                        <!-- Header Right End -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header Section End -->
+
+        <!-- Main Search Start -->
+        <div class="main-search-active">
+            <div class="sidebar-search-icon">
+                <button class="search-close"><i class="pe-7s-close"></i></button>
+            </div>
+            <div class="sidebar-search-input">
+                <form action="#">
+                    <div class="form-search">
+                        <input id="search" class="input-text" value="" placeholder="" type="search">
+                        <button>
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+                </form>
+                <p class="form-description">Hit enter to search or ESC to close</p>
+            </div>
+        </div>
+        <!-- Main Search End -->
+
+        <!-- Page Title Section Start -->
+        <div class="page-title-section section section-padding-top" data-bg-color="#000" data-overlay="0.7"
+            data-bg-image="assets/images/bg/breadcrumb-bg-three.jpg">
+            <div class="page-title">
+                <div class="container">
+                    <h1 class="title">We work with bold brands that we believe in</h1>
+                </div>
+            </div>
+            <div class="page-breadcrumb position-static">
+                <div class="container">
+                    <ul class="breadcrumb justify-content-center">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="current">News</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Page Title Section End -->
+
+        <div class="container" id="container">
+            <div class="row py-5">
+                <div class="col-12 py-5">
+                    <H2>Global reorganization to strengthen synergies leveraging OT and IT</H2>
+                    <p>
+                        <b>Tokyo, October 27, 2023 </b>
+                        – Hitachi, Ltd. (TSE: 6501, "Hitachi") is reorganizing its global organizations to further
+                        accelerate the creation of synergies with OT (Operational Technology) fields such as energy,
+                        transportation, and industry, while strengthening digital capabilities and value chains in the
+                        Lumada co-creation cycle*1. With the new organizations, Hitachi will promote company-wide
+                        digital transformation through the utilization of rapidly evolving generative AI and contribute
+                        to the realization of a sustainable society.
+                    </p>
+                    <p>
+                        Effective November 1, 2023, Hitachi Vantara LLC's digital solutions business will be spun off
+                        into a new company, Hitachi Digital Services led by CEO Roger Lvin. Hitachi Digital Services
+                        will offer services in cloud, data, IoT technologies and OT and IT integration services. Hitachi
+                        Digital Services will provide digital value to each industry and drive Hitachi's unique synergy
+                        creation under Hitachi Digital*2 led by Jun Taniguchi, CEO of Hitachi Digital and Gajen Kandiah,
+                        President of Hitachi Digital, and Executive Chairman of Hitachi Digital Services.
+                    </p>
+                    <p>
+                        Furthermore, as of April 1, 2024, Hitachi's IT Platform Products Management Division, which has
+                        been responsible for business development, research/development, and production of data
+                        infrastructure in Japan, will be succeeded by the newly established Hitachi Vantara, Ltd.
+                        (President: Akinobu Shimada) through an absorption-type split.
+                    </p>
+                    <p>
+                        In addition, to meet the growing demand for data infrastructure, Hitachi Vantara LLC led by CEO
+                        Sheila Rohra, will reorganize to further strengthen its industry-leading storage and hybrid
+                        cloud-centric data Infrastructure services portfolio.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-section section" data-bg-color="#030e22">
+            <div class="container">
+
+                <!-- Footer Top Widgets Start -->
+                <div class="row mb-lg-14 mb-md-10 mb-6">
+
+                    <!-- Footer Widget Start -->
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 col-12 mb-6">
+                        <div class="footer-widget">
+                            <div class="footer-logo">
+                                <a href="index.html"><img src="assets/images/logo/footer-logo.png"
+                                        alt="Agency Logo"></a>
+                            </div>
+                            <div class="footer-widget-content">
+                                <div class="content">
+
+
+                                    <p><a href="#">(+1) 212-946-2701</a></p>
+                                    <p><a href="#">hello@hasagency.com</a> </p>
+                                </div>
+                                <div class="footer-social-inline">
+                                    <a href="#"><i class="fab fa-twitter-square"></i></a>
+                                    <a href="#"><i class="fab fa-facebook-square"></i></a>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Footer Widget End -->
+
+                    <!-- Footer Widget Start -->
+                    <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6 mb-6">
+                        <div class="footer-widget">
+                            <h4 class="footer-widget-title">Services</h4>
+                            <div class="footer-widget-content">
+                                <ul>
+                                    <li><a href="#">Marketing</a></li>
+                                    <li><a href="#">SEO/SEM</a></li>
+                                    <li><a href="#">Development</a></li>
+                                    <li><a href="#">UX Design</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Footer Widget End -->
+
+                    <!-- Footer Widget Start -->
+                    <div class="col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6 mb-6">
+                        <div class="footer-widget">
+                            <h4 class="footer-widget-title">Products</h4>
+                            <div class="footer-widget-content">
+                                <ul>
+                                    <li><a href="#">Elementor Guru</a></li>
+                                    <li><a href="#">WooLentor Pro</a></li>
+                                    <li><a href="#">Plugins <span class="ft-badge">New</span></a></li>
+                                    <li><a href="#">Page Builder</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Footer Widget End -->
+
+                    <!-- Footer Widget Start -->
+                    <div class="col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6 mb-6">
+                        <div class="footer-widget">
+                            <h4 class="footer-widget-title">About</h4>
+                            <div class="footer-widget-content">
+                                <ul>
+                                    <li><a href="#">Features</a></li>
+                                    <li><a href="#">Our Partners</a></li>
+                                    <li><a href="#">Affiliate Program</a></li>
+                                    <li><a href="#">Pricing</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Footer Widget End -->
+
+                    <!-- Footer Widget Start -->
+                    <div class="col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6 mb-6">
+                        <div class="footer-widget">
+                            <h4 class="footer-widget-title">Contact</h4>
+                            <div class="footer-widget-content">
+                                <ul>
+                                    <li><a href="#">Support Ticket</a></li>
+                                    <li><a href="#">Help Desk</a></li>
+                                    <li><a href="#">Live Chat</a></li>
+                                    <li><a href="#">FAQs</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Footer Widget End -->
+
+                </div>
+                <!-- Footer Top Widgets End -->
+
+                <!-- Footer Copyright Start -->
+                <div class="row">
+                    <div class="col">
+                        <p class="copyright">© 2022 <strong>Exomac</strong> Made with <i
+                                class="fas fa-heart text-danger" aria-hidden="true"></i> by <a
+                                href="https://hasthemes.com/"><strong>HasThemes</strong></a>.</p>
+                    </div>
+                </div>
+                <!-- Footer Copyright End -->
+
+            </div>
+        </div>
+        <!-- Scroll Top Start -->
+        <a href="#" class="scroll-top" id="scroll-top">
+            <i class="arrow-top fal fa-long-arrow-up"></i>
+            <i class="arrow-bottom fal fa-long-arrow-up"></i>
+        </a>
+        <!-- Scroll Top End -->
+    </div>
+
+    <div id="site-main-mobile-menu" class="site-main-mobile-menu">
+        <div class="site-main-mobile-menu-inner">
+            <div class="mobile-menu-header">
+                <div class="mobile-menu-logo">
+                    <a href="index.html"><img src="assets/images/logo/logo.png" alt=""></a>
+                </div>
+                <div class="mobile-menu-close">
+                    <button class="toggle">
+                        <i class="icon-top"></i>
+                        <i class="icon-bottom"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="mobile-menu-content">
+                <nav class="site-mobile-menu">
+                    <ul>
+                        <li class="has-children">
+                            <a href="index.html"><span class="menu-text">Homepage</span></a>
+                            <span class="menu-toggle"><i class="far fa-angle-down"></i></span>
+                            <ul class="sub-menu">
+                                <li><a href="index.html"><span class="menu-text">Home One</span></a></li>
+                                <li><a href="index-2.html"><span class="menu-text">Home Two</span></a></li>
+                                <li><a href="index-3.html"><span class="menu-text">Home Three</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="about.html"><span class="menu-text">About Us</span></a>
+                        </li>
+                        <li>
+                            <a href="service.html"><span class="menu-text">Services</span></a>
+                        </li>
+                        <li class="has-children">
+                            <a href="work.html"><span class="menu-text">Work</span></a>
+                            <span class="menu-toggle"><i class="far fa-angle-down"></i></span>
+                            <ul class="sub-menu">
+                                <li><a href="work.html"><span class="menu-text">Work</span></a></li>
+                                <li><a href="work-details.html"><span class="menu-text">Work Details</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="has-children">
+                            <a href="#"><span class="menu-text">Blog</span></a>
+                            <span class="menu-toggle"><i class="far fa-angle-down"></i></span>
+                            <ul class="sub-menu">
+                                <li><a href="blog-grid.html"><span class="menu-text">Blog Grid</span></a></li>
+                                <li><a href="blog-classic.html"><span class="menu-text">Blog Classic</span></a></li>
+                                <li><a href="blog-details.html"><span class="menu-text">Blog Details</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="contact-us.html"><span class="menu-text">Contact Us</span></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- JS
+============================================ -->
+    <!-- Vendors JS -->
+    <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
+    <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/vendor/jquery-migrate-3.3.2.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugins JS -->
+    <script src="assets/js/plugins/parallax.min.js"></script>
+    <script src="assets/js/plugins/jquery.ajaxchimp.min.js"></script>
+    <!-- <script src="assets/js/plugins/aos.min.js"></script> -->
+    <script src="assets/js/plugins/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/plugins/isotope.pkgd.min.js"></script>
+    <script src="assets/js/plugins/jquery.animatedheadline.min.js"></script>
+    <script src="assets/js/plugins/jquery.counterup.min.js"></script>
+    <script src="assets/js/plugins/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/plugins/svg-inject.min.js"></script>
+    <script src="assets/js/plugins/swiper.min.js"></script>
+    <script src="assets/js/plugins/vanilla-tilt.min.js"></script>
+    <!-- <script src="assets/js/plugins/vidim.min.js"></script>
+    <script src="assets/js/plugins/vivus.min.js"></script> -->
+    <script src="assets/js/plugins/waypoints.min.js"></script>
+
+    <!-- Main Activation JS -->
+    <script src="assets/js/main.js"></script>
+    <!-- <script src="./index.js"></script> -->
+
+    <script src="./chat.js"></script>
+
+    <script>
+        var chatConfig = {
+            token: "kZ2DFO7hVihqcaT12Igw",
+        };
+        initializeChatWidget(chatConfig);
+    </script>
+</body>
+
+</html>
